@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI vs Humanity Poster</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            width: 297mm;
+            height: 420mm;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .poster-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 2.5rem;
+            box-sizing: border-box;
+            background: linear-gradient(180deg, #dbeafe 0%, #bfdbfe 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background-image {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: 45%;
+    height: 50%;
+    background: url('robot_human.png') bottom left/contain no-repeat;
+    opacity: 0.55;
+    z-index: 0;
+    transform: translateY(-18%); /* move upward without affecting size */
+}
+
+
+
+        .section-box {
+            background-color: #ffffff;
+            border-radius: 2rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 2px solid #60a5fa;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-box {
+            background-color: #93c5fd;
+            border-radius: 2rem;
+            padding: 1.5rem;
+            text-align: center;
+            border: 2px solid #60a5fa;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .title-text {
+            font-size: 2.2rem;
+            font-weight: bold;
+            text-align: center;
+            color: #1e3a8a;
+        }
+    </style>
+</head>
+<body class="bg-[#e2e8f0]">
+    <div class="poster-container">
+        <div class="background-image"></div>
+
+        <!-- Header -->
+        <div class="header-box">
+            <img src="ipec_logo.png" alt="IPEC Logo" class="h-20 w-auto">
+            <div class="flex flex-col items-center flex-1">
+                <h1 class="title-text">AI vs Humanity</h1>
+                <p class="text-lg font-bold mb-1">Name of Students (Durgesh, Shirishti, Mythli)</p>
+                <p class="text-lg font-bold mb-1">Name of Guide (Dr. Sweta Chaku)</p>
+                <p class="text-lg">Department of Computer Science and Engineering</p>
+                <p class="text-lg italic mt-1">Session 2025-2026</p>
+            </div>
+        </div>
+
+        <!-- Two-Column Layout -->
+        <div class="grid grid-cols-2 gap-8">
+            <!-- Left Column -->
+            <div class="flex flex-col space-y-8">
+                <div class="section-box">
+                    <h2 class="column-header">Introduction</h2>
+                    <p class="content-text text-justify">
+                        The rapid evolution of Artificial Intelligence (AI) presents a pivotal moment for humanity,
+                        ushering in a new era of unprecedented technological advancement. This project explores the
+                        multifaceted relationship between human intelligence and AI, moving beyond the simplistic
+                        "AI vs. humanity" narrative. It posits that a collaborative, symbiotic relationship is the
+                        key to a future where both entities thrive. This project analyzes the historical trajectory
+                        of AI development, its current capabilities, and the ethical dilemmas it presents, laying
+                        the groundwork for a collaborative framework.
+                    </p>
+                </div>
+
+                <div class="section-box">
+                    <h2 class="column-header">Proposed Model for Collaboration</h2>
+                    <p class="content-text text-justify">
+                        Our proposed model for human-AI collaboration is based on a *Human-in-the-Loop* (HITL) framework,
+                        where AI serves as an augmentative tool rather than a replacement. The model emphasizes three core
+                        components: 1) *Ethical AI Design:* Implementing a values-based programming approach to ensure AI
+                        decisions align with human morality and societal norms; 2) *Shared Task Decomposition:* Deconstructing
+                        complex tasks so that AI handles data analysis and pattern recognition, while humans focus on creative
+                        problem-solving and emotional reasoning; and 3) *Continuous Feedback Loop:* A system for ongoing
+                        human oversight and correction to mitigate AI biases and improve its performance.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="flex flex-col space-y-8">
+                <div class="section-box">
+                    <h2 class="column-header">Applications</h2>
+                    <p class="content-text text-justify mb-2">
+                        The collaborative model can be applied across various domains:
+                    </p>
+                    <ul class="list-disc list-inside content-text pl-4">
+                        <li>*Healthcare:* AI assists in diagnosing diseases from medical images, while human doctors provide compassionate care and treatment plans.</li>
+                        <li>*Scientific Research:* AI accelerates the analysis of vast datasets, enabling human scientists to discover new patterns and formulate groundbreaking theories.</li>
+                        <li>*Creative Industries:* AI generates initial creative concepts (e.g., music, art), which human artists then refine and imbue with unique emotional depth.</li>
+                        <li>*Environmental Management:* AI models predict climate patterns and pollution trends, allowing human experts to implement targeted and effective conservation strategies.</li>
+                    </ul>
+                </div>
+
+                <div class="section-box">
+                    <h2 class="column-header">Expected Outcomes</h2>
+                    <p class="content-text text-justify">
+                        By adopting this collaborative framework, we can expect several transformative outcomes. AI will
+                        become a catalyst for human flourishing, leading to increased productivity and innovation. The
+                        ethical dilemmas surrounding AI will be actively managed, ensuring that technology remains a force
+                        for good. Ultimately, this approach promises a future where human ingenuity is enhanced, not eclipsed,
+                        by the power of artificial intelligence, leading to a more prosperous and sustainable world for all.
+                    </p>
+                </div>
+
+                <div class="section-box">
+                    <h2 class="column-header">Reference</h2>
+                    <p class="reference-text">1. Smith, J. (2023). The Collaborative Imperative: How AI and Humanity Can Co-Exist. Tech Press.</p>
+                    <p class="reference-text">2. Chen, L. (2022). Ethics in AI: A Framework for Human-in-the-Loop Systems. Journal of Artificial Intelligence and Society, 10(2), 45-60.</p>
+                    <p class="reference-text">3. Lee, D., & Patel, S. (2021). Augmenting Human Intelligence with AI. MIT Press.</p>
+                    <p class="reference-text">4. World Economic Forum. (2024). The Future of Jobs Report 2024: AI and the Human Workforce. Retrieved from [URL].</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
